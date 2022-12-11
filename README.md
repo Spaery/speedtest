@@ -67,6 +67,7 @@ services:
       - LOOP_DELAY=1800
       - DB_SAVE=true
       - DB_HOST=http://influxdb:8086
+      - DB_ORG=speedtest
       - DB_NAME=speedtest
       - DB_USERNAME=admin
       - DB_PASSWORD=password
