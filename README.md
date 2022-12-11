@@ -39,7 +39,7 @@ For a full visualization and long term tracking, I recommend InfluxDB as a time-
 version: "3"
 services:
   grafana:
-    image: grafana/grafana:7.5.2
+    image: grafana/grafana:9.3.1
     restart: always
     ports:
       - 3000:3000
@@ -49,7 +49,7 @@ services:
       - influxdb
 
   influxdb:
-    image: influxdb:1.8.3
+    image: influxdb:2.5.1
     volumes:
       - influxdb:/var/lib/influxdb
     ports:
